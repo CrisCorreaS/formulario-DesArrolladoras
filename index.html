@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cristina Correa Formulario DesArrolladoras 2022</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <form class="formulario" id="formulario">
+        <h3>Create Account</h3>
+        <!-- ------------NOMBRE----------- -->
+          <label for="nombre" class="formulario-label">Nombre</label>
+          <input
+            type="text"
+            class="formulario-input"
+            name="nombre"
+            id="nombre"
+            maxlength="30"
+            required
+          />
+        <!-- ---------EMAIL------------- -->
+          <label for="email" class="formulario-label">Email</label>
+          <input
+            type="email"
+            class="formulario-input"
+            name="email"
+            id="email"
+            maxlength="30"
+            required
+          />
+        <!-- ------------CLAVE--------------- -->
+          <label for="clave" class="formulario-label">Clave</label>
+          <input
+            type="password"
+            class="formulario-input"
+            name="clave"
+            id="clave"
+            maxlength="8"
+            required
+          />
+        <!-- --------CONFIRMAR CLAVE--------- -->
+          <label for="clave" class="formulario-label">Confirme su clave</label>
+          <input
+            type="password"
+            class="formulario-input"
+            name="clave"
+            id="clave"
+            maxlength="8"
+            required
+          />
+            <button type="submit">ENVIAR</button>
+      </form>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
