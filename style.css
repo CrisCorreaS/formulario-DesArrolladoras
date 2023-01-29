@@ -25,26 +25,26 @@ form{
 }
 form h3{
     font-weight: 570;
-    margin-bottom: 15px;
-    margin-top: 10px;
+    margin-bottom: 30px;
     font-size: x-large;
     text-shadow: -2px -2px 1px rgba(0, 0, 0, 0.7), -2px -2px 1px rgba(0, 0, 0, 0.7), -2px;
 }
-form label{
+.formulario-label {
     font-size: 15px;
     margin-top: 15px;
     color: rgba(172, 186, 225, 0.6);
     font-weight: 540;
 }
-form input{
+.input-control .formulario-input{
     border: 1px rgba(180, 183, 192, 0.8) solid;
-    margin: 10px 0;
+    margin: 5px 0 20px;
     padding: 20px;
     outline: none;
     background: white;
     border-radius: 4px;
     font-size: 16px;
     height: 20px;
+    width: 100%;
 }
 form button{
     margin: 20px 0 0;
