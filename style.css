@@ -1,89 +1,122 @@
+/* Para toda la página */
 * {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-.contenedor {
-  width: 100%;
-  height: 100vh;
-  background: #242933;
+
+/* Para el body */
+body {
+  background-color: #242933;
+  color: #aebce1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-form {
-  background: #2f3644;
-  border: 2px #3f455c solid;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  padding: 2vw 3vw;
-  width: 30%;
+
+/* Para el div con clase "caja-formulario" */
+.caja-formulario {
+  border: 2px solid #3f455c;
+  border-radius: 6px;
+  background-color: #2f3644;
+  padding: 30px;
+  width: 400px;
   max-width: 600px;
-  color: #acbae1;
+  height: 20%;
+  margin: 50px auto;
+  font-size: 18px;
 }
-form h3 {
-  font-weight: 570;
-  margin-bottom: 30px;
+
+/* Para el encabezado h1 */
+h1 {
   font-size: x-large;
-  text-shadow: -2px -2px 1px rgba(0, 0, 0, 0.7),
-    -2px -2px 1px rgba(0, 0, 0, 0.7), -2px;
+  font-weight: 570;
+  text-shadow: -2px -2px 1px rgba(0, 0, 0, 0.7), -2px -2px 1px rgba(0, 0, 0, 0.7), -2px;
+  margin-bottom: 30px;
 }
-.formulario-label {
+
+/* Para el div con clase "campos" */
+.campos {
+    margin: 1em auto;
+    width: 100%;
+}
+
+/* Para todas las etiquetas label */
+label {
   font-size: 15px;
+  font-weight: 540;
   margin-top: 15px;
   color: rgba(172, 186, 225, 0.6);
   font-weight: 540;
 }
-.input-control .formulario-input {
-  border: 1px rgba(180, 183, 192, 0.8) solid;
-  margin: 5px 0 20px;
-  padding: 20px;
-  outline: none;
-  background: white;
-  border-radius: 4px;
-  font-size: 16px;
-  height: 20px;
+
+/* Para la etiqueta input con id= "name", "email", "password" o "passwordConfirm" */
+input#name,
+input#email,
+input#password,
+input#passwordConfirm {
   width: 100%;
+  padding: 15px;
+  height: 60%;
+  border-radius: 4px;
+  border: 1px rgba(180, 183, 192, 0.8) solid;
+  margin-top: 7px;
 }
-form button {
-  margin: 20px 0 0;
-  padding: 13px;
-  background: #6c63ff;
+
+/* Para la etiqueta input con id="botonEnviar" */
+#botonEnviar {
+  display: block;
+  padding: 15px;
+  margin-top: 35px;
+  background-color: #6c63ff;
   border: 2px #05050b solid;
   border-radius: 4px;
-  color: white;
   font-size: 15px;
   font-weight: 550;
+  color: white;
+  width: 100%;
   outline: none;
-  cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
-  form {
-    padding: 2vw 3vw;
-    width: 80%;
-    max-width: 600px;
-  }
+/*----------------------Para las validaciones--------------------*/
 
-  form h3 {
-    margin: 15px 7px;
-    margin-bottom: 30px;
-  }
+/* Están CORRECTOS los parámetros */
+/* Para el input type="text", type=password y type="email" que están dentro
+ de la etiqueta formulario con id formulario */
+#formulario input[type="text"]:valid,
+input[type="password"]:valid,
+input[type="email"]:valid {
+  background: url(./images/success-icon.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: white;
+  background-origin: content-box;
+  border: 3px solid #51d968 !important;
+  border-radius: 5px;
+}
 
-  .formulario-label {
-    margin-left: 7px;
-  }
+/* Están INCORRECTOS los parámetros */
+/* Para cuando escribamos un texto erróneo en el formulario */
+.input-nombre:invalid,
+.input-email:invalid,
+.input-password:invalid,
+.input-passwordConfirm:invalid {
+  background: url(../images/error-icon.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: white;
+  background-origin: content-box;
+  border: 3px solid #da5656 !important;
+  border-radius: 5px;
+}
 
-  .input-control .formulario-input {
-    margin: 5px 7px 20px;
-    padding: 17px;
-    width: 92%;
-  }
-
-  form button {
-    margin: 5px 7px;
-    padding: 10px;
-  }
+/* Para la etiqueta span que manda el mensaje de error en cada parámetro 
+    cuando se manda un texto que no es valido */
+span {
+  color: #de5757;
+  font-size: 12px;
+  margin: 4px;
 }

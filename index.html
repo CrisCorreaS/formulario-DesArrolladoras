@@ -1,67 +1,81 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cristina Correa Formulario DesArrolladoras 2022</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="./index.js"></script>
+    <title>Laboratorio Formulario Samsung DesarrolladorAs</title>
   </head>
+
   <body>
-    <div class="contenedor">
-      <form class="form" id="form">
-        <h3>Create Account</h3>
-        <!-- ------------NOMBRE----------- -->
-        <div class="input-control">
-          <label for="username" class="formulario-label">Nombre</label>
+    <div class="caja-formulario">
+      <h1>Create Account</h1>
+      <form id="formulario">
+        <!-- --------------------NOMBRE----------------------------- -->
+        <div class="campos">
+          <label for="name">Nombre</label><br />
           <input
             type="text"
-            class="formulario-input"
-            name="username"
-            id="username"
-            maxlength="12"
+            class="name"
+            id="name"
+            name="name"
+            autocomplete="off"
+            pattern="^[a-zA-ZÀ-ÿ\s]{1,40}$"
+            maxlength="50"
             required
           />
+          <span id="nombreErroneo" style="display: none"></span>
         </div>
-        <!-- ---------EMAIL------------- -->
-        <div class="input-control">
-          <label for="email" class="formulario-label">Email</label>
+
+        <!-- --------------------EMAIL----------------------------- -->
+        <div class="campos">
+          <label for="email">Email</label><br />
           <input
             type="email"
-            class="formulario-input"
-            name="email"
+            class="email"
             id="email"
-            maxlength="30"
+            autocomplete="off"
+            maxlength="50"
+            pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+"
             required
           />
+          <span id="emailErroneo"></span>
         </div>
-        <!-- ------------CLAVE--------------- -->
-        <div class="input-control">
-          <label for="password" class="formulario-label">Clave</label>
+
+        <!-- --------------------CLAVE----------------------------- -->
+        <div class="campos">
+          <label for="password">Clave</label><br/>
           <input
             type="password"
-            class="formulario-input"
-            name="password"
+            class="password"
             id="password"
+            autocomplete="off"
+            pattern="^.{8,}$"
             maxlength="8"
             required
           />
+          <span id="passwordErronea"></span>
         </div>
-        <!-- --------CONFIRMAR CLAVE--------- -->
-        <div class="input-control">
-          <label for="password" class="formulario-label">Confirme su clave</label>
+
+        <!-- --------------------CONFIRMAR CLAVE----------------------------- -->
+        <div class="campos">
+          <label for="password">Confírme su clave</label><br />
           <input
             type="password"
-            class="formulario-input"
-            name="password2"
-            id="password2"
+            class="passwordConfirm"
+            id="passwordConfirm"
+            autocomplete="off"
+            pattern="^.{8,}$"
             maxlength="8"
             required
           />
+          <span id="passwordConfirmadaErronea"></span>
         </div>
-        <button type="submit">ENVIAR</button>
+        <!-- -------------------ENVIAR-------------------------------------------- -->
+        <button id="botonEnviar" class="button">ENVIAR</button>
       </form>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
