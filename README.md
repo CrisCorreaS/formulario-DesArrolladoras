@@ -1,28 +1,35 @@
-# formulario-DesArrolladoras
-Ejercicio de Laboratorio del Curso "Desarrollo Front-End (Nivel 2) ED.2022" del programa Samsung DesArrolladoras
+# Formulario de creación de cuenta ficticia
+Este repositorio contiene el código fuente de un formulario de creación de cuenta ficticia para acceder a una página web. Fue desarrollado como parte del ejercicio de laboratorio del curso "Desarrollo Front-End (Nivel 2) ED.2022" del programa Samsung DesArrolladoras.
 
-Actividad final
-El alumno deberá crear un formulario para crear una cuenta ficticia de acceso a una página web.
+### Validaciones
+El formulario incluye las siguientes validaciones:
 
-Se deberán tener en cuenta las siguientes validaciones:
+Todos los campos son obligatorios. En caso de dejar algún campo en blanco, se mostrará un error.
+- El campo "Nombre" solo acepta caracteres de texto. Cualquier carácter numérico no será admitido.
+- El campo "Email" debe ser una dirección de correo electrónico válida. Se utiliza una expresión regular para validar el formato del correo electrónico.
+- El campo "Clave" debe tener un máximo de 8 caracteres.
+- El valor introducido en los campos "Clave" y "Confirme su clave" deben ser idénticos. En caso contrario, se mostrará un error.
 
-  -El alumno deberá crear los estilos necesarios para los casos en los que las validaciones sean correctas (color verde) y para los casos en las que no lo sean (color      rojo) de acuerdo con los siguientes ejemplos.
-  
-  -Todos los campos deberán ser obligatorios o de lo contrario tendremos un error.
-  
-  -El campo Nombre deberá ser de tipo Texto, cualquier carácter numérico no será admitido.
-  
-  -El campo Email deberá ser de tipo “email”. Además, el alumno deberá investigar en internet cómo hacer una validación de correo electrónico mediante expresiones          regulares. De forma que si el formato del email no es válido salga un mensaje con un fallo.
-  
-  -El campo Clave deberá tener como máximo 8 caracteres.
-  
-  -El valor introducido en los campos Clave y Confirme su clave deberán ser idénticos o se obtendrá un error.
-  
+### Archivos y directorios
+El repositorio está estructurado de la siguiente manera:
 
-Finalmente, si todos los campos están correctamente validados, al pulsar sobre el botón ENVIAR deberá salir un alert por pantalla informando de que la inscripción ha sido correcta.
+- **index.html:** Archivo HTML que contiene la estructura del formulario.
+- **style.css:** Archivo CSS que define los estilos del formulario y las validaciones correctas e incorrectas.
+- **index.js:** Archivo JavaScript que contiene la lógica de validación del formulario y muestra una alerta de inscripción exitosa al enviar el formulario.
+- **images/:** Directorio que contiene los iconos correspondientes a las validaciones positivas y negativas.
 
+### Uso
+- Clona este repositorio en tu máquina local:
+`git clone https://github.com/tu-usuario/nombre-repositorio.git`
 
-EL script HTML se creará en un archivo al que llamaremos index.html.
-El CSS se creará en un archivo style.css
-El código javascript se creará en un archivo index.js
-Se creará un directorio llamado images en el que se tendrán los dos iconos correspondientes a las validaciones positivas o negativas.
+- Abre el archivo index.html en tu navegador web.
+
+- Completa el formulario con los datos requeridos y observa las validaciones en tiempo real.
+
+- Al hacer clic en el botón "ENVIAR", se mostrará una alerta si todos los campos se validan correctamente.
+
+### Contribuciones
+Las contribuciones son bienvenidas. Si encuentras algún problema o tienes alguna mejora que sugieras, puedes abrir un issue o enviar una solicitud de pull.
+
+### Licencia
+Este proyecto está bajo la Licencia MIT.
