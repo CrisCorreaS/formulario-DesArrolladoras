@@ -19,14 +19,15 @@ El repositorio está estructurado de la siguiente manera:
 - **images/:** Directorio que contiene los iconos correspondientes a las validaciones positivas y negativas.
 
 ### Uso
-- Clona este repositorio en tu máquina local:
+
+**1.-** Clona este repositorio en tu máquina local:
 `git clone https://github.com/tu-usuario/nombre-repositorio.git`
 
-- Abre el archivo index.html en tu navegador web.
+**2.-** Abre el archivo index.html en tu navegador web.
 
-- Completa el formulario con los datos requeridos y observa las validaciones en tiempo real.
+**3.-** Completa el formulario con los datos requeridos y observa las validaciones en tiempo real.
 
-- Al hacer clic en el botón "ENVIAR", se mostrará una alerta si todos los campos se validan correctamente.
+**4.-** Al hacer clic en el botón "ENVIAR", se mostrará una alerta si todos los campos se validan correctamente.
 
 ### Contribuciones
 Las contribuciones son bienvenidas. Si encuentras algún problema o tienes alguna mejora que sugieras, puedes abrir un issue o enviar una solicitud de pull.
