@@ -21,7 +21,7 @@ El repositorio está estructurado de la siguiente manera:
 ### Uso
 
 **1.-** Clona este repositorio en tu máquina local:
-`git clone https://github.com/tu-usuario/nombre-repositorio.git`
+`git clone https://github.com/CrisCorreaS/formulario-DesArrolladoras.git`
 
 **2.-** Abre el archivo index.html en tu navegador web.
 
