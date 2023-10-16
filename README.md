@@ -1,4 +1,6 @@
 # Formulario de creación de cuenta ficticia
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-FINALIZADO-violet) <br/>
+<br/>
 Este repositorio contiene el código fuente de un formulario de creación de cuenta ficticia para acceder a una página web. Fue desarrollado como parte del ejercicio de laboratorio del curso "Desarrollo Front-End (Nivel 2) ED.2022" del programa Samsung DesArrolladoras.
 
 ### Validaciones
