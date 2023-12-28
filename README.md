@@ -1,5 +1,9 @@
 # Formulario de creación de cuenta ficticia
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-FINALIZADO-violet) <br/>
+![Badge Finalizado](https://img.shields.io/badge/STATUS-FINALIZADO-violet)
+<img align="right" alt="License MIT" src="https://img.shields.io/badge/LICENSE-MIT-green" /> <br/>
+<img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+<img alt="css3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+<img alt="javascript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" /> <br/>
 <br/>
 Este repositorio contiene el código fuente de un formulario de creación de cuenta ficticia para acceder a una página web. Fue desarrollado como parte del ejercicio de laboratorio del curso "Desarrollo Front-End (Nivel 2) ED.2022" del programa Samsung DesArrolladoras.
 
